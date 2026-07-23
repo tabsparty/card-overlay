@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OBS Card Overlay</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- OpenCV.js -->
+  <script async src="https://docs.opencv.org/4.x/opencv.js"></script>
+</head>
+<body>
+
+  <!-- Video source -->
+  <video id="video" autoplay playsinline muted></video>
+
+  <!-- Detection canvas -->
+  <canvas id="canvas"></canvas>
+
+  <!-- Overlay -->
+  <div id="overlay">
+    <div id="cards">No cards detected</div>
+  </div>
+
+  <!-- Controls -->
+  <div id="controls">
+    <button id="startBtn">Start Camera</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
